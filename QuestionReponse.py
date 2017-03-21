@@ -13,6 +13,7 @@ class QuestionReponse:
         self.laQuestion = modifStr(question[num])
         self.laReponse = modifStr(reponse[num])
         self.lExplication = modifStr(explication[num])
+        self.resultat = -1;
 
 
     def afficherQ(self):
@@ -45,5 +46,7 @@ class QuestionReponse:
 
     def ValiderReponse(self, resp):
         if(resp == int(modifStr(self.laReponse))):
+            self.resultat = 1
             return True
+        self.resultat = 0
         return False
