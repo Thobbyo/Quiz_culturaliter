@@ -1,3 +1,4 @@
+# -*- coding: UTF8 -*-
 import pygame
 from pygame.locals import*
 
@@ -17,7 +18,7 @@ class QuestionReponse:
 
 
     def afficherQ(self):
-        x = 100
+        x = 25
         y = 100
         s = ""
         for a in self.laQuestion:
@@ -25,21 +26,21 @@ class QuestionReponse:
                 s += a
             elif a == "#":
                 fenetre.blit(text_font.render(" " + s + " ", 2, (0, 0, 0), (255, 255, 255)), (x, y))
-                y += 41
+                y += 26
                 s = ""
         fenetre.blit(text_font.render(" " + s + " ", 2, (0, 0, 0), (255, 255, 255)), (x, y))
 
 
     def afficherE(self):
-        x = 100
-        y = 200
+        x = 25
+        y = 260
         s = ""
         for a in self.lExplication:
             if a != "#":
                 s += a
             elif a == "#":
                 fenetre.blit(text_font.render(" " + s + " ", 2, (0, 0, 0), (255, 255, 255)), (x, y))
-                y += 41
+                y += 26
                 s = ""
         fenetre.blit(text_font.render(" " + s + " ", 2, (0, 0, 0), (255, 255, 255)), (x, y))
 

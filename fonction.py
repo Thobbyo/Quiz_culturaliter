@@ -1,3 +1,4 @@
+# -*- coding: UTF8 -*-
 import random
 
 from constante import*
@@ -9,7 +10,7 @@ def choixQuestion():
     hold = []
 
     #tant que l'on n'a pas 10 question
-    while len(lesQuestion) < 10:
+    while len(lesQuestion) < 9:
         val = random.randint(0, len(question)-1)
         if hold.count(val) == 0:
             qr = QuestionReponse(val)
