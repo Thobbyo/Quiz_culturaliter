@@ -23,7 +23,7 @@ class QuestionReponse:
         s = ""
         for a in self.laQuestion:
             if a != "#":
-                s += a
+                s = s + a
             elif a == "#":
                 fenetre.blit(text_font.render(" " + s + " ", 2, (0, 0, 0), (255, 255, 255)), (x, y))
                 y += 26
@@ -37,7 +37,7 @@ class QuestionReponse:
         s = ""
         for a in self.lExplication:
             if a != "#":
-                s += a
+                s = s + a
             elif a == "#":
                 fenetre.blit(text_font.render(" " + s + " ", 2, (0, 0, 0), (255, 255, 255)), (x, y))
                 y += 26

@@ -65,7 +65,7 @@ while not exit:
 
             a.afficherE()
 
-            afficherB(bouton_suivant, R_suivant, 300, 550)
+            afficherB(bouton_suivant, R_suivant, 300, 540)
             
             #on regarde si on passe au suivant
             for event in pygame.event.get():
@@ -106,7 +106,7 @@ while not exit:
         
         result[ss].afficherQ()
         
-        afficherB(bouton_suivant, R_suivant, 300, 550)
+        afficherB(bouton_suivant, R_suivant, 300, 540)
 
         pygame.display.flip()
         
